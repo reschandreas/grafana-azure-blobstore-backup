@@ -38,6 +38,8 @@ FROM mcr.microsoft.com/azure-cli:azurelinux3.0
 
 LABEL org.opencontainers.image.title="grafana-backup"
 LABEL org.opencontainers.image.description="Container with Azure CLI and gcx for Grafana dashboard backup/restore"
+LABEL org.opencontainers.image.source="https://github.com/reschandreas/grafana-azure-blobstore-backup"
+LABEL org.opencontainers.image.licenses="MIT"
 
 # Copy gcx from downloader stage
 COPY --from=downloader /tmp/gcx /usr/local/bin/gcx

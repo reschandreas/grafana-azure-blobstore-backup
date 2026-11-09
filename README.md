@@ -1,8 +1,8 @@
 # grafana-backup
 
-[![Docker Hub](https://img.shields.io/docker/v/schmiddim/grafana-azure-blobstore-backup?label=Docker%20Hub&logo=docker)](https://hub.docker.com/r/schmiddim/grafana-azure-blobstore-backup)
+[![GHCR](https://img.shields.io/badge/ghcr.io-reschandreas%2Fgrafana--azure--blobstore--backup-blue?logo=github)](https://github.com/reschandreas/grafana-azure-blobstore-backup/pkgs/container/grafana-azure-blobstore-backup)
 
-Container image with Azure CLI and gcx for Grafana 12+ dashboard operations.
+Container image with Azure CLI and gcx for Grafana 13+ dashboard operations.
 
 ## Contents
 
@@ -17,7 +17,7 @@ Container image with Azure CLI and gcx for Grafana 12+ dashboard operations.
 docker build -t grafana-backup:latest .
 
 # Multi-arch
-docker buildx build --platform linux/amd64,linux/arm64 -t your-registry/grafana-backup:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t ghcr.io/reschandreas/grafana-azure-blobstore-backup:latest --push .
 ```
 
 ## Usage
@@ -42,5 +42,5 @@ Configured for automatic updates of:
 ## Docker
 
 ```bash
-docker pull schmiddim/grafana-azure-blobstore-backup:latest
+docker pull ghcr.io/reschandreas/grafana-azure-blobstore-backup:latest
 ```
